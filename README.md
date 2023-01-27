@@ -18,7 +18,7 @@ Endpoints:
 
 - `POST /red/:originalLanguage/:targetLanguage`: translates something incorrectly, word for word
 - `GET /brian/:targetLanguage`: returns script of that scene in target language
-- `POST /image/`: user posts imageData array for a given picture. API does something like turning each value into a string, turning each digit into binary, then turning it back into decimal and returning new image data (though this needs a cleverer solution, methinks)
+- `POST /image/`: user posts imageData array for a given picture. API takes each value in cell, converts it to Roman numerals, then sums the ASCII code of each letter (available [here](http://sticksandstones.kstrom.com/appen.html)) and puts that into the array instead. (Need to come up with a solution for when the sum > 255.)
 
 Useful links:
 
