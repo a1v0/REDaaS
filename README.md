@@ -18,7 +18,7 @@ Endpoints:
 
 - `POST /red/:originalLanguage/:targetLanguage`: translates something incorrectly, word for word
 - `GET /brian/:targetLanguage`: returns script of that scene in target language
-- `POST /image/`: user posts imageData array for a given picture. API takes each value in cell, converts it to Roman numerals, then sums the ASCII code of each letter (available [here](http://sticksandstones.kstrom.com/appen.html)) and puts that into the array instead. (Need to come up with a solution for when the sum > 255.)
+- `POST /image/`: user posts imageData array for a given picture. API takes each value in cell, converts it to Roman numerals, then sums the ASCII code of each letter (available [here](http://sticksandstones.kstrom.com/appen.html)) and puts that into the array instead. If value is 0, return "O". If resultant value > 255, take value using lowercase and subtract uppercase. Hopefully that’ll always give a value lower than 255. The longest Roman numeral strings are most likely CCXLVIII or CCXXXVIII
 
 Useful links:
 
