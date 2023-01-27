@@ -19,3 +19,9 @@ Endpoints:
 - `POST /red/:originalLanguage/:targetLanguage`: translates something incorrectly, word for word
 - `GET /brian/:targetLanguage`: returns script of that scene in target language
 - `POST /image/`: user posts imageData array for a given picture. API does something like turning each value into a string, turning each digit into binary, then turning it back into decimal and returning new image data (though this needs a cleverer solution, methinks)
+
+Useful links:
+
+- <https://yandex.com/dev/translate/>
+- <https://www.c-sharpcorner.com/article/create-simple-web-api-in-asp-net-mvc/>
+- <https://www.abstractapi.com/guides/best-translation-apis-for-developers>
